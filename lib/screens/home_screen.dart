@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 20),
           AppGTText(text: 'Sức khoẻ', style: _style()),
           const SizedBox(height: 20),
+          const SizedBox(height: 20),
           BlocBuilder<LocalizationCubit, LocalizationState>(
             builder: (context, state) => DropdownButton<String>(
               items: AppConstants.languages
@@ -66,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
               MaterialPageRoute(
                 builder: (context) => const AnotherScreen(),
               )),
-          child: const Text('Another Screen')),
+          child: Text('Màn hình HTML', style: _style(),)),
     );
   }
 

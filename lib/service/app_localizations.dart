@@ -40,7 +40,7 @@ class AppLocalizations {
 
       result = await  translator.translateText(text);
       final time = DateTime.now().difference(startTime).inMilliseconds;
-      print('zzz - Tr to ${targetLanguageModel.languageName} - result: $result - Time: $time ms');
+      print('zzz 354 - Then Tr ${targetLanguageModel.languageName} - (text: $text --- result: $result) - Time: $time ms');
 
       _saveToCache(targetLanguageModel.languageCode, text, result);
       return result;
